@@ -88,4 +88,12 @@ footer a {
   margin: 1rem;
 }
 
+.final {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */

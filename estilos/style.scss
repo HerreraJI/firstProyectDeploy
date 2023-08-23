@@ -92,3 +92,10 @@ footer{
         margin: 1rem;
     }
 }
+
+.final{
+    background-color: black;
+    color: white;
+    @include centrado;
+
+}
