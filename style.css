@@ -58,12 +58,32 @@ header .linkIzq input:hover {
   border-bottom: 1px solid rgb(126, 69, 9);
   color: rgb(126, 69, 9);
 }
-.main p {
+.main #primerP {
   padding: 1rem 4rem;
   color: rgb(42, 50, 54);
   font-size: 1.5rem;
   font-family: "Dosis", sans-serif;
   font-family: "Josefin Sans", sans-serif;
+}
+.main #moving {
+  width: 400px;
+  height: 1.5rem;
+  margin: 1rem auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #moving :last-child {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  font-weight: 900;
+  font-size: 1.3rem;
+  font-family: "Dosis", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  animation: mover 5s linear infinite;
 }
 
 footer {
@@ -94,6 +114,12 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes mover {
+  to {
+    left: -50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
