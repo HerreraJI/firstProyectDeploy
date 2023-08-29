@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Web</title>
+    <link rel="shortcut icon" href="imagenes/favIcon.svg" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,24 +17,32 @@
         <div class="loader"></div>
     </div>
     <header>
-<!--       
-        <div class="logo">
-            <img src="googley-eye-birds.svg" alt="brand">
-        </div> -->
         <div class="linkIzq">
             <div class="links">Home</div>
-            <div class="links">FaQ</div>
+            <div class="links">Proyectos</div>
             <div class="links">logs</div>
-            <input type="button" value="Registrarse">
+            <input type="button" value="Contacto">
+            <div class="btn-colapse" id="btn-colapse">
+                <div></div>
+                <div></div>
+                <div></div> 
+            </div>
+            <div class="hidden" id="menu-lateral">
+                <div>Home</div>
+                <div>Proyectos</div>
+                <div>logs</div>
+            </div>
         </div>
+        
     </header>
-    <div class="main">
-        <h1 >Mi primer pagina con CSS!</h1>
+    <div class="main">  
+        <h1 >Mi blog!</h1>
         <p id="primerP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque culpa facilis, nesciunt repudiandae reiciendis quis beatae.</p>
         <div id="moving">
             <p>Texto en movimiento</p>
         </div>
     </div>
+    
 
     <footer>
         <div class="pie">Enlaces de interes<a href="#">main</a><a href="#">papa</a><a href="#">palta</a><a href="#">lechuga</a></div>
@@ -42,6 +52,12 @@
 
     </footer>
     <div class="final">Copyright Herrera Juan - 2023</div>
-    
+    <script src="/estilos/Javascript/javascript.js"></script>
+    <script>
+		ScrollReveal().reveal('.main', { delay: 200})
+		ScrollReveal().reveal('footer', { delay: 500 })
+		ScrollReveal().reveal('.final', { delay: 1000 })
+	</script>
+    <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>    
 </body>
 </html>

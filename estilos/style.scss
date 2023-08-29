@@ -20,7 +20,7 @@ body{
 header{
     @include centrado;
     height: 3rem;
-    background-color: transparent;
+    background-color:transparent;
     position: fixed;
     color: rgb(255, 234, 208);
     .linkIzq{
@@ -51,6 +51,53 @@ header{
                 transform: scale(1.2);
                 cursor: pointer;
             }
+        }
+        /*.btn-colapse{
+            height: 2rem;
+            width: 2rem;
+            border: 1px solid gray;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            div{
+                width: 80%;
+                height: 3px;
+                background-color: black;
+                border-radius: 3px;
+            
+            }
+        }*/
+        
+        .side-menu{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;   
+            top: 3rem; 
+            right: 1rem;       
+            border: 1px solid gray;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgba(255, 228, 196, 0.272);
+
+            div{
+                box-sizing: border-box;
+                padding:1rem;
+                width: 100%;
+                border-radius: 8px;
+                @include centrado;
+                &:hover{
+                    cursor: pointer;
+                    background-color: purple;
+                }                 
+            }
+            
         }
     }
 
@@ -128,4 +175,36 @@ footer{
         left:-50%        
     }
     
+}
+
+
+.hidden{
+    display:none;
+}
+
+@media (max-width:770px){
+    .links{
+        display: none;
+    }
+    .btn-colapse{
+        height: 2rem;
+        width: 2rem;
+        border: 1px solid gray;
+        border-radius: 4px;
+        display: flex;
+        margin-right: 1rem;        
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        div{
+            width: 80%;
+            height: 3px;
+            background-color: black;
+            border-radius: 3px;
+        
+        }
+    }
+
 }

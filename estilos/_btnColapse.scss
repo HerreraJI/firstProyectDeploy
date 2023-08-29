@@ -1,0 +1,14 @@
+.btn-colapse{
+    height: 3rem;
+    width: 3 rem;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn-colapse div{
+    width: 80%;
+    height: 10%;
+
+}

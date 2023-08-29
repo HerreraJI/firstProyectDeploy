@@ -23,6 +23,25 @@ header .linkIzq {
   height: 100%;
   align-items: center;
   justify-content: flex-end;
+  /*.btn-colapse{
+      height: 2rem;
+      width: 2rem;
+      border: 1px solid gray;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      div{
+          width: 80%;
+          height: 3px;
+          background-color: black;
+          border-radius: 3px;
+
+      }
+  }*/
 }
 header .linkIzq .links {
   padding: 1rem 1rem;
@@ -44,6 +63,33 @@ header .linkIzq input {
 header .linkIzq input:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+header .linkIzq .side-menu {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 228, 196, 0.272);
+}
+header .linkIzq .side-menu div {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .linkIzq .side-menu div:hover {
+  cursor: pointer;
+  background-color: purple;
 }
 
 .main {
@@ -119,6 +165,34 @@ footer a {
 @keyframes mover {
   to {
     left: -50%;
+  }
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .links {
+    display: none;
+  }
+  .btn-colapse {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .btn-colapse div {
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
   }
 }
 
