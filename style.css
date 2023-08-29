@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(0deg, rgb(255, 234, 208) 0%, rgb(150, 97, 107) 100%);
+  background-image: url(/imagenes/fondoPAGPS.png);
 }
 
 header {
@@ -16,7 +16,7 @@ header {
   height: 3rem;
   background-color: transparent;
   position: fixed;
-  color: rgb(255, 234, 208);
+  color: #fae5cf;
 }
 header .linkIzq {
   display: flex;
@@ -30,15 +30,15 @@ header .linkIzq .links {
   border-radius: 10px 0 10px;
 }
 header .linkIzq .links:hover {
-  background-color: rgb(135, 62, 79);
+  background-color: rgb(19, 27, 56);
   color: white;
   cursor: pointer;
 }
 header .linkIzq input {
   margin-right: 1rem;
-  background-color: rgb(55, 80, 92);
-  color: rgb(247, 111, 142);
-  border: 1px solid rgb(247, 111, 142);
+  background-color: rgb(19, 27, 56);
+  color: #fae5cf;
+  border: 1px solid #fae5cf;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -58,7 +58,7 @@ header .linkIzq .side-menu {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(255, 228, 196, 0.272);
+  background-color: rgba(125, 234, 216, 0.272);
 }
 header .linkIzq .side-menu div {
   box-sizing: border-box;
@@ -71,7 +71,7 @@ header .linkIzq .side-menu div {
 }
 header .linkIzq .side-menu div:hover {
   cursor: pointer;
-  background-color: purple;
+  background-color: rgb(20, 24, 64);
 }
 
 .main {
@@ -84,17 +84,18 @@ header .linkIzq .side-menu div:hover {
 .main h1 {
   font-size: 3rem;
   border-bottom: 1px solid rgb(126, 69, 9);
-  color: rgb(126, 69, 9);
+  color: #fae5cf;
 }
 .main #primerP {
   padding: 1rem 4rem;
-  color: rgb(42, 50, 54);
+  color: #dfcab2;
   font-size: 1.5rem;
   font-family: "Dosis", sans-serif;
   font-family: "Josefin Sans", sans-serif;
 }
 .main #moving {
   width: 400px;
+  color: #fae5cf;
   height: 1.5rem;
   margin: 1rem auto;
   overflow: hidden;
@@ -119,8 +120,8 @@ footer {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  padding-top: 1rem;
-  background-color: rgb(17, 53, 55);
+  padding-top: 2rem;
+  background-color: rgb(7, 10, 20);
   color: rgb(150, 97, 107);
   width: 100vw;
 }
@@ -156,7 +157,7 @@ footer a {
 
 @media (max-width: 770px) {
   header {
-    background-color: rgba(250, 128, 114, 0.416);
+    background-color: rgba(237, 227, 227, 0.507);
   }
   .links {
     display: none;
@@ -177,12 +178,12 @@ footer a {
   .btn-colapse div {
     width: 80%;
     height: 3px;
-    background-color: black;
+    background-color: rgba(11, 55, 63, 0.986);
     border-radius: 3px;
   }
   footer {
     display: grid;
-    background-color: rgb(17, 53, 55);
+    background-color: rgb(7, 10, 20);
     color: rgb(150, 97, 107);
   }
   footer div {
