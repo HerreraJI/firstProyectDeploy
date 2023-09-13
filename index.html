@@ -11,7 +11,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
-   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapperloader">
@@ -19,9 +20,9 @@
     </div>
     <header id="header">
         <div class="linkIzq">
-            <div class="links">Home</div>
-            <div class="links">Tecnologías</div>
-            <div class="links">Más</div>
+            <div class="links"><a href="#home">Home</a></div>
+            <div class="links"><a href="#tecnologias">Tecnologías</a></div>
+            <div class="links"><a href="#mas">Más</a></div>
             <input type="button" value="Contacto">
             <div class="btn-colapse" id="btn-colapse">
                 <div></div>
@@ -33,19 +34,86 @@
                 <div>Tecnologías</div>
                 <div>Más</div>
             </div>
-        </div>
-        
+        </div>        
     </header>
-    <div class="main">  
+
+
+    <div class="main" id="home">  
         <h1 >*J Herrera*</h1>
         <p id="primerP">Apasionado por el desarrollo Front-end.</p>
         <div id="moving">
             <p>Desarrollador WEB</p>
         </div>
     </div>
+
+    <section id="tecnologias">
+        <h1 id="tecnologias" data-aos="fade-right">TECNOLOGIAS</h1>
+        <div class="wrapper-logo">
+            <div class="log-card">
+                <h2>HTML</h2> 
+                <div class="img" id="HtmlImg">
+                    <img src="logos/logo_html5SinFondo_Final.png" alt="HTML">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>CSS</h2>
+                <div class="img">
+                    <img src="logos/css_logo_sinFondoCuadradaFin.png" alt="">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>JavaScript</h2>
+                <div class="img">
+                    <img src="logos/js_logoSin_FondoFinal.png" alt="">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>JQuery</h2>
+                <div class="img">
+                    <img src="logos/jquery_logoSinFondo.png" alt="">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>SASS</h2>
+                <div class="img">
+                    <img src="logos/Sass_logo_sinFondoFinal.png" alt="sass">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>GIT</h2>
+                <div class="img">
+                    <img src="logos/git_logoPF.png" alt="GIT">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>GitHub</h2> 
+                <div class="img">
+                    <img src="logos/gitHub_logoFINAL.png" alt="github">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>Bootstrap</h2> 
+                <div class="img">
+                    <img src="logos/bootstrap_logoFINAL.png" alt="bootstrap_logo">
+                </div>        
+            </div>
+            <div class="log-card">
+                <h2>C</h2> 
+                <div class="img">
+                    <img src="logos/c_logoFINAL.png" alt="C_logo">
+                </div>
+            </div>
+            <div class="log-card">
+                <h2>Java</h2> 
+                <div class="img" id="javaImg">
+                    <img src="logos/java_logoFINAL.png" alt="java_logo">
+                </div>
+            </div>
+        </div>
+    </section>
     
 
-    <footer>
+    <footer id="mas">
         <div class="pie">Enlaces de interes<a href="#">principal</a><a href="#">proyectos</a><a href="#">contacto</a><a href="#">+</a></div>
         <div class="pie">contactos<a href="https://wa.me/5493492593649?text=Hola%20Me%20quiero%20contactar%20..." target="_blank" ><i class="fa-solid fa-phone-flip fa-rotate-90" style="color: #d1cffa;margin-right: 0.4rem;"></i>telefono</a><a href="https://www.instagram.com/juani.herrera89" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #bf17ae;margin-right: 0.4rem;"></i>instagram</a><a href="mailto:jiherrera41@gmail.com?"><i class="fa-regular fa-envelope" style="color: #faf3a7;margin-right: 0.4rem;"></i>mail</a><a href=""><i class="fa-brands fa-facebook" style="color: #5177bd; margin-right: 0.4rem;"></i>facebook</a></div>
         <div class="pie">Lenguajes dominados<a href="">javascript</a><a href="">c</a><a href="">java</a><a href="">python</a></div>
@@ -55,9 +123,13 @@
     <script src="/estilos/Javascript/javascript.js"></script>
     <script>
 		ScrollReveal().reveal('.main', { delay: 200})
-		ScrollReveal().reveal('footer', { delay: 500 })
-		ScrollReveal().reveal('.final', { delay: 1000 })
+		ScrollReveal().reveal('footer', { delay: 300 })
+		ScrollReveal().reveal('.final', { delay: 800 })
 	</script>
     <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
